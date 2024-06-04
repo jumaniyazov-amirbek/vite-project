@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/Logo (2).png";
 import search from "../../assets/img/Search.png";
 import heart from "../../assets/img/Favorites.png";
 import cart from "../../assets/img/Cart1.png";
 import user from "../../assets/img/User.png";
 import Menu from "../Main/Menu";
+import { Link } from "react-router-dom";
+
 export default function Header() {
+  const [burger, setBurger] = useState(false);
+
+  function menu() {
+    if (burger == true) {
+      setBurger(false);
+    }
+    if (burger == false) {
+      setBurger(true);
+    }
+  }
   return (
     <div className="header">
       <div className="container">
@@ -21,23 +33,41 @@ export default function Header() {
             <input placeholder="Search " type="text" name="" id="search" />
           </div>
           <div className="header-link">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact Us</a>
-            <a href="">Blog</a>
+            <Link to="/"> Home</Link>
+            <Link to="/About"> About</Link>
+            <Link to="/ContactUs">ContactUs</Link>
+            <Link to="Blog">Blog</Link>
           </div>
           <div className="header-btn">
             <button>
-              <img src={heart} alt="" />
+              <Link to="/Heart">
+                <img src={heart} alt="" />
+              </Link>
             </button>
             <button>
-              <img src={cart} alt="" />
+              <Link to="/Praduct">
+                <img src={cart} alt="" />
+              </Link>
             </button>
             <button>
-              <img src={user} alt="" />
+              <Link to="/Profil">
+                <img src={user} alt="" />
+              </Link>
             </button>
           </div>
-          <Menu />
+          <div className="menu">
+            <button onClick={menu}>
+              <Menu />
+            </button>
+            <div className={burger ? "blok" : "none"}>
+              <div className="release">
+                <h1>Not</h1>
+                <button onClick={menu}>
+             <h1>X</h1>
+            </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

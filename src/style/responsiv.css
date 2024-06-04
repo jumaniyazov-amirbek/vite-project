@@ -49,4 +49,17 @@
     height: 100%;
     padding: 88px 0 0 0;
   }
+  .BnnerBottom-right{
+    display: none;
+  }
+  .BnnerBottom-left{
+    display: none;
+  }
+  .BnnerBottom-all {
+    display: flex;
+    flex-direction: column;
+  }
+  .BannerResponsiv{
+    display: block;
+  }
 }
