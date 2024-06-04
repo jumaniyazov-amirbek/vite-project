@@ -10,7 +10,7 @@
   }
   .header-sorche {
     display: none;
-  } 
+  }
 }
 @media screen and (max-width: 412px) {
   .banner-left span {
@@ -49,17 +49,37 @@
     height: 100%;
     padding: 88px 0 0 0;
   }
-  .BnnerBottom-right{
+  .BnnerBottom-right {
     display: none;
   }
-  .BnnerBottom-left{
+  .BnnerBottom-left {
     display: none;
   }
   .BnnerBottom-all {
     display: flex;
     flex-direction: column;
   }
-  .BannerResponsiv{
+  .BannerResponsiv {
     display: block;
+  }
+  .Category-low-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 128px;
+    background-color: #ededed;
+    border-radius: 10px;
+  }
+  .Category-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 600px 0 0 0;
+  }
+  .Category-low {
+    flex-wrap: wrap;
   }
 }

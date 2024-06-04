@@ -20,6 +20,7 @@
   position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 3;
 }
 .header-all {
   display: flex;
@@ -90,7 +91,8 @@
 .menu span {
   width: 20px;
   height: 5px;
-  border-bottom: #000 1px solid;
+  border-bottom: #000 2px solid;
+  background-color: #fff;
 }
 .menu {
   display: flex;
@@ -99,6 +101,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.menu button{
+
+  border: none;
 }
 .button-all {
   display: none;
@@ -313,34 +319,36 @@
   height: 100%;
   opacity: 1;
 }
-.Category-all{
+.Category-all {
   width: 100%;
-height: 352px;
-background-color: #FAFAFA;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-.Category-top{
+  height: 352px;
+  background-color: #fafafa;
   display: flex;
   align-items: center;
-justify-content: center;
-gap: 100px;
+  justify-content: center;
+  flex-direction: column;
 }
-.Category-low{
+.Category-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.Category-low {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
+
 }
-.Category-low-block{
+.Category-low-block {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  width: 160px;height: 128px;
-  background-color: #EDEDED;
+  width: 160px;
+  height: 128px;
+  background-color: #ededed;
   border-radius: 10px;
 }

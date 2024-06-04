@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
 import Arrow from "../../../assets/img/Arrow.png";
 import Arrow1 from "../../../assets/img/Arrow1.png";
 import Arro3 from "../../../assets/img/category/Phones.png";
@@ -43,17 +46,35 @@ export default function Category() {
   return (
     <div className="Category-all">
       <div className="Category-top">
-        <div className="text">Browse By Category</div>
+        <div className="text">
+          <h2>Browse By Category</h2>
+        </div>
         <div className="slider-img">
-          <img src={Arrow} alt="" />
-          <img src={Arrow1} alt="" />
+        
         </div>
       </div>
       <div className="Category-low">
         {product.map((item) => (
-          <div key={item.id} className="Category-low-block">
-            <img src={item.image} alt="" />
-            <p>{item.name}</p>
+          <div>
+            <Swiper
+              style={{ width: 200 }}
+              className="banner-slider slider-banner"
+              spaceBetween={0}
+              loop={true}
+            >
+              <SwiperSlide className="slider-slide">
+                <div key={item.id} className="Category-low-block">
+                  <img src={item.image} alt="" />
+                  <p>{item.name}</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="slider-slide">
+                <div key={item.id} className="Category-low-block">
+                  <img src={item.image} alt="" />
+                  <p>{item.name}</p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         ))}
       </div>
