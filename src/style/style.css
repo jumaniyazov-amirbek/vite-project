@@ -352,3 +352,7 @@
   background-color: #ededed;
   border-radius: 10px;
 }
+.block{
+  display: flex;
+  gap: 20px;
+}
