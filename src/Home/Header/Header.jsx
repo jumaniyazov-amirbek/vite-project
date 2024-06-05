@@ -34,23 +34,23 @@ export default function Header() {
           </div>
           <div className="header-link">
             <Link to="/"> Home</Link>
-            <Link to="/About"> About</Link>
-            <Link to="/ContactUs">ContactUs</Link>
-            <Link to="Blog">Blog</Link>
+            <Link to="about"> About</Link>
+            <Link to="contactUs">ContactUs</Link>
+            <Link to="blog">Blog</Link>
           </div>
           <div className="header-btn">
             <button>
-              <Link to="/Heart">
+              <Link to="/heart">
                 <img src={heart} alt="" />
               </Link>
             </button>
             <button>
-              <Link to="/Praduct">
+              <Link to="/praduct">
                 <img src={cart} alt="" />
               </Link>
             </button>
             <button>
-              <Link to="/Profil">
+              <Link to="/profil">
                 <img src={user} alt="" />
               </Link>
             </button>
@@ -61,10 +61,13 @@ export default function Header() {
             </button>
             <div className={burger ? "blok" : "none"}>
               <div className="release">
-                <h1>Not</h1>
+                <div className="release-block">
+                    <h1>Not</h1>
                 <button onClick={menu}>
-             <h1>X</h1>
-            </button>
+                  <h1>X</h1>
+                </button>
+                </div>
+              
               </div>
             </div>
           </div>

@@ -34,6 +34,7 @@
     justify-content: center;
     flex-direction: column;
   }
+
   .banner-left {
     display: flex;
     align-items: center;
@@ -81,5 +82,13 @@
   }
   .Category-low {
     flex-wrap: wrap;
+  }
+  .block{
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+  }
+  .Category-all{
+    display: none;
   }
 }

@@ -17,16 +17,17 @@ export default function Category() {
       <div className="Category-low">
         <div>
           <Swiper
+      
             style={{ width: 1000 }}
             className="banner-slider slider-banner"
             spaceBetween={0}
             loop={true}
           >
             <SwiperSlide className="slider-slide">
-                <CategoryBlok />
+              <CategoryBlok />
             </SwiperSlide>
             <SwiperSlide className="slider-slide">
-                <CategoryBlokk />
+              <CategoryBlokk />
             </SwiperSlide>
           </Swiper>
         </div>

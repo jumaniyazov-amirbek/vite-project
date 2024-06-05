@@ -11,7 +11,7 @@ export default function CategoryBlok() {
     {
       id: 1,
       image: Arro3,
-      name: "fuck",
+      name: "Phone",
     },
     {
       id: 2,

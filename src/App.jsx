@@ -16,12 +16,12 @@ function App() {
       <Mainn />
       <Footer />
       <Routes>
-        <Route path="About" element={<About />} />
-        <Route path="ContactUs" element={<ContactUs />} />
-        <Route path="Blog" element={<Blog />} />
-        <Route path="Heart" element={<Heart />} />
-        <Route path="Praduct" element={<Praduct />} />
-        <Route path="Profil" element={<Profil />} />
+        <Route path="about" element={<About />} />
+        <Route path="contactUs" element={<ContactUs />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="heart" element={<Heart />} />
+        <Route path="praduct" element={<Praduct />} />
+        <Route path="profil" element={<Profil />} />
       </Routes>
     </>
   );
